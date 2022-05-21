@@ -1,9 +1,48 @@
 import React from "react";
+import { Routes, Route } from "react-router-dom";
+// ----------------------------------------
+import Layout from "./layout_components/Layout";
+import Home from "./pages/00_home/Home";
+import Missing from "./pages/00_missing/Missing";
+// ----------------------------------------
+import TypeOf from "./pages/01_typeof/TypeOf";
+import ArithOps from "./pages/02_artih_ops/ArithOps";
+import ComparOps from "./pages/03_compar_ops.js/ComparOps";
+import IfEtc from "./pages/04_if_etc/IfEtc";
+import ForEtc from "./pages/05_for_etc/ForEtc";
+import Strings from "./pages/06_strings/Strings";
+import Numbers from "./pages/07_numbers/Numbers";
+import Dates from "./pages/08_dates/Dates";
+import Arrays from "./pages/09_arrays/Arrays";
+import Objects from "./pages/10_objects/Objects";
+import Functions from "./pages/11_functions/Functions";
 
 const App = () => {
   return (
-    <h1>This is a test element!</h1>
-  )
-}
+    <>
+      <Routes>
+        <Route path="/" element={<Layout />}>
+          {/* ----------------------------- */}
+          <Route index element={<Home />} />
+          {/* ----------------------------- */}
+          <Route path="01_typeof" element={<TypeOf />} />
+          <Route path="02_arithmetic_ops" element={<ArithOps />} />
+          <Route path="03_comparison_ops" element={<ComparOps />} />
+          <Route path="04_if_etc" element={<IfEtc />} />
+          <Route path="05_for_etc" element={<ForEtc />} />
+          <Route path="06_strings" element={<Strings />} />
+          <Route path="07_numbers" element={<Numbers />} />
+          <Route path="08_dates" element={<Dates />} />
+          <Route path="09_arrays" element={<Arrays />} />
+          <Route path="10_objects" element={<Objects />} />
+          <Route path="11_functions" element={<Functions />} />
+          {/* ----------------------------- */}
+          <Route path="*" element={<Missing />} />
+          {/* ------------------------------ */}
+        </Route>
+      </Routes>
+    </>
+  );
+};
 
 export default App;
