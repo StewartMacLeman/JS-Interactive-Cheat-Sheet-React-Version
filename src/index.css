@@ -35,14 +35,14 @@ h1, h2, h3, h4, p, li, button {
   font-family: helvetica, tahoma, sans-serif;
   text-align: center;
   margin: 0 auto;
-  padding: .25rem;
+  padding: .2rem;
   background-color: none;
 }
 /* Button styles. ---------------------------------------- */
  button {
    background-color: black;
    color: white;
-   border-radius: 8px;
+   border-radius: .5rem;
  }
  button:hover {
    background-color: white;
@@ -101,15 +101,15 @@ h1, h2, h3, h4, p, li, button {
    margin: 1rem auto;
    background-color: lightsteelblue;
    border: .25rem solid black;
-   border-radius: 10px;
+   border-radius: .6rem;
  }
- .main * {
+ .main .jsTopicCont {
    margin: 1rem auto;
  }
  /* Individual sections container. --------------------- */
 .jsTopicCont {
   width: 90%;
-  padding: .25rem;
+  padding: .15rem;
   border: .15rem solid black;
   background-color: white;
   border-radius: 10px;
@@ -117,27 +117,33 @@ h1, h2, h3, h4, p, li, button {
   flex-direction: column;
   align-items: center;
 }
-.jsTopicCont * {
-  margin: .15rem auto;
+.jsTopicCont h3  {
+  margin-top: .5rem;
+}
+.jsTopicCont h3,
+.jsTopicCont .codeExampleCont,
+.jsTopicCont button,
+.jsTopicCont .codeOutcomeCont  {
+  margin-bottom: .5rem;
 }
 .codeExampleCont, .codeOutcomeCont {
   width: 100%;
-  margin: 0 auto;
   overflow-y: hidden;
   overflow-x: scroll;
   display: flex;
   flex-direction: column;
   align-items: center;
 }
-.codeExampleCont, .codeOutcomeCont, .jsTopicCont button {
-  position: relative;
-  top: -1.25rem;
-}
 .codeExampleCont div, .codeOutcomeCont div {
-  font-family: helvetica, tahoma, serif;
+  font-family: helvetica, tahoma, sans-serif;
+  font-size: 1.5rem;
 }
 code {
   padding: 0.25rem 0.5rem;
+}
+pre {
+  padding: 0;
+  margin: 0;
 }
 .marginB {
   margin-bottom: 1.25rem;
@@ -147,7 +153,7 @@ code {
   padding: .25rem;
   border: .15rem solid black;
   background-color: white;
-  border-radius: 10px;
+  border-radius: .6rem;
 }
 .imageExampleCont img {
   max-width: 100%;
@@ -160,17 +166,20 @@ code {
 @media screen and (max-width: 801px){
   .main, .navigation { width: 90%; }
 }
-@media screen and (max-width: 8000px){
+@media screen and (max-width: 800px){
   html { font-size: 12px; }
 
   .main * {
-    border-radius: 8px;
+    border-radius: .5rem;
   }
-  button { border-radius: 6px; }
+  button { border-radius: .4rem; }
 }
 @media screen and (max-width: 550px){
   .main, .navigation { width: 96%; }
 }
 @media screen and (max-width: 450px){
   html { font-size: 10px; }
+  .codeExampleCont {
+    align-items: flex-start;
+  }
 }

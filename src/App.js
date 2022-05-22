@@ -18,6 +18,21 @@ import Objects from "./pages/10_objects/Objects";
 import Functions from "./pages/11_functions/Functions";
 
 const App = () => {
+  const showOutcome = (e) => {
+    let nextElement = e.target.nextElementSibling;
+    nextElement.classList.toggle("hide");
+
+    let button = e.target;
+    let buttonText = e.target.textContent;
+    let hide = "Hide Outcome";
+    let show = "Show Outcome";
+
+    if (buttonText === "Show Outcome") {
+      button.textContent = hide;
+    } else if (buttonText === "Hide Outcome") {
+      button.textContent = show;
+    }
+  };
   return (
     <>
       <Routes>
@@ -25,7 +40,7 @@ const App = () => {
           {/* ----------------------------- */}
           <Route index element={<Home />} />
           {/* ----------------------------- */}
-          <Route path="01_typeof" element={<TypeOf />} />
+          <Route path="01_typeof" element={<TypeOf showOutcome={showOutcome} />} />
           <Route path="02_arithmetic_ops" element={<ArithOps />} />
           <Route path="03_comparison_ops" element={<ComparOps />} />
           <Route path="04_if_etc" element={<IfEtc />} />
