@@ -79,6 +79,7 @@ h1, h2, h3, h4, p, li, button {
    list-style: none;
    margin: 0 auto;
    padding: 0;
+   width: 50%;
  }
  a {
    text-decoration: none;
