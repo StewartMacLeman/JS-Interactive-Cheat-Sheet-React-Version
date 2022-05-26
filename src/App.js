@@ -42,7 +42,7 @@ const App = () => {
           {/* ----------------------------- */}
           <Route path="01_typeof" element={<TypeOf showOutcome={showOutcome} />} />
           <Route path="02_arithmetic_ops" element={<ArithOps showOutcome={showOutcome} />} />
-          <Route path="03_comparison_ops" element={<ComparOps />} />
+          <Route path="03_comparison_ops" element={<ComparOps showOutcome={showOutcome} />} />
           <Route path="04_if_etc" element={<IfEtc />} />
           <Route path="05_for_etc" element={<ForEtc />} />
           <Route path="06_strings" element={<Strings />} />
