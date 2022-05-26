@@ -1,14 +1,14 @@
 import React from "react";
 
 const TYPEOF_9 = ({showOutcome}) => {
-const jsCode =
-`let name = NaN;
+const jsCode =`
+let name = NaN;
 
- function whatIsTheType(variable){
-   return typeof variable;
- }
+function whatIsTheType(variable){
+  return typeof variable;
+}
  
- let outcome = whatIsTheType(name);`;
+let outcome = whatIsTheType(name);`;
 // -------------------------------------
 let name = NaN;
 

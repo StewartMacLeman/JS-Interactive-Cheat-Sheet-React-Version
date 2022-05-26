@@ -1,14 +1,14 @@
 import React from "react";
 
 const TYPEOF_8 = ({showOutcome}) => {
-const jsCode =
-`let name = Symbol();
+const jsCode =`
+let name = Symbol();
 
- function whatIsTheType(variable){
-   return typeof variable;
- }
+function whatIsTheType(variable){
+  return typeof variable;
+}
  
- let outcome = whatIsTheType(name);`;
+let outcome = whatIsTheType(name);`;
 // -------------------------------------
 let name = Symbol();
 

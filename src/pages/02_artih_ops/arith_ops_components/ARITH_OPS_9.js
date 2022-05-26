@@ -1,27 +1,29 @@
 import React from "react";
 
-const TYPEOF_2 = ({showOutcome}) => {
+const ARITH_OPS_9 = ({showOutcome}) => {
 const jsCode =`
-let age = 55;
+let numOne = 10;
+let numTwo = 2;
 
-function whatIsTheType(variable){
-  return typeof variable;
+function getRemainder(num_1, num_2) {
+  return num_1 % num_2;
 }
- 
-let outcome = whatIsTheType(age);`;
+
+let outcome = getRemainder(numOne, numTwo);`;
 // -------------------------------------
-let age = 55;
+let numOne = 10;
+let numTwo = 2;
 
-function whatIsTheType(variable) {
-  return typeof variable;
-};
+function getRemainder(num_1, num_2) {
+  return num_1 % num_2;
+}
 
-let outcome = whatIsTheType(age);
+let outcome = getRemainder(numOne, numTwo);
 // -------------------------------------
 
     return (
       <div className="jsTopicCont">
-        <h3>typeof Operator: Numbers</h3>
+        <h3>Arithmetic Operators: % (Remainder / Modulo) V1</h3>
 
         <div className="codeExampleCont">
           <pre><code>{jsCode}</code></pre>
@@ -38,4 +40,4 @@ let outcome = whatIsTheType(age);
     );
 };
 
-export default TYPEOF_2;
+export default ARITH_OPS_9;

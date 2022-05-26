@@ -7,7 +7,7 @@ import Missing from "./pages/00_missing/Missing";
 // ----------------------------------------
 import TypeOf from "./pages/01_typeof/TypeOf";
 import ArithOps from "./pages/02_artih_ops/ArithOps";
-import ComparOps from "./pages/03_compar_ops.js/ComparOps";
+import ComparOps from "./pages/03_compar_ops/ComparOps";
 import IfEtc from "./pages/04_if_etc/IfEtc";
 import ForEtc from "./pages/05_for_etc/ForEtc";
 import Strings from "./pages/06_strings/Strings";
@@ -41,7 +41,7 @@ const App = () => {
           <Route index element={<Home />} />
           {/* ----------------------------- */}
           <Route path="01_typeof" element={<TypeOf showOutcome={showOutcome} />} />
-          <Route path="02_arithmetic_ops" element={<ArithOps />} />
+          <Route path="02_arithmetic_ops" element={<ArithOps showOutcome={showOutcome} />} />
           <Route path="03_comparison_ops" element={<ComparOps />} />
           <Route path="04_if_etc" element={<IfEtc />} />
           <Route path="05_for_etc" element={<ForEtc />} />

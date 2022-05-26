@@ -1,14 +1,14 @@
 import React from "react";
 
 const TYPEOF_3 = ({showOutcome}) => {
-const jsCode =
-`let funLoving = true;
+const jsCode =`
+let funLoving = true;
 
- function whatIsTheType(variable){
-   return typeof variable;
- }
+function whatIsTheType(variable){
+  return typeof variable;
+}
  
- let outcome = whatIsTheType(funLoving);`;
+let outcome = whatIsTheType(funLoving);`;
 // -------------------------------------
 let funLoving = true;
 

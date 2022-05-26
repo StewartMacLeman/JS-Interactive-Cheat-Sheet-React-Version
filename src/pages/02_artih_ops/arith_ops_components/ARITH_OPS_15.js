@@ -1,27 +1,27 @@
 import React from "react";
 
-const TYPEOF_2 = ({showOutcome}) => {
+const ARITH_OPS_15 = ({showOutcome}) => {
 const jsCode =`
-let age = 55;
+let numOne = 3;
 
-function whatIsTheType(variable){
-  return typeof variable;
+function useDecrement(num_1) {
+  return --num_1;
 }
- 
-let outcome = whatIsTheType(age);`;
+
+let outcome = useDecrement(numOne);`;
 // -------------------------------------
-let age = 55;
+let numOne = 3;
 
-function whatIsTheType(variable) {
-  return typeof variable;
-};
+function useDecrement(num_1) {
+  return --num_1;
+}
 
-let outcome = whatIsTheType(age);
+let outcome = useDecrement(numOne);
 // -------------------------------------
 
     return (
       <div className="jsTopicCont">
-        <h3>typeof Operator: Numbers</h3>
+        <h3>Arithmetic Operators: -- (Decrement) V1</h3>
 
         <div className="codeExampleCont">
           <pre><code>{jsCode}</code></pre>
@@ -38,4 +38,4 @@ let outcome = whatIsTheType(age);
     );
 };
 
-export default TYPEOF_2;
+export default ARITH_OPS_15;

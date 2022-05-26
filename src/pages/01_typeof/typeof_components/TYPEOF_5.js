@@ -1,14 +1,14 @@
 import React from "react";
 
 const TYPEOF_5 = ({showOutcome}) => {
-const jsCode =
-`let start = undefined;
+const jsCode =`
+let start = undefined;
 
- function whatIsTheType(variable){
-   return typeof variable;
- }
+function whatIsTheType(variable){
+  return typeof variable;
+}
  
- let outcome = whatIsTheType(start);`;
+let outcome = whatIsTheType(start);`;
 // -------------------------------------
 let start = undefined;
 

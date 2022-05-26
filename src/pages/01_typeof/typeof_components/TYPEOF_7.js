@@ -1,14 +1,14 @@
 import React from "react";
 
 const TYPEOF_7 = ({showOutcome}) => {
-const jsCode =
-`let colours = ["blue", "green", "yellow", "orange"];
+const jsCode =`
+let colours = ["blue", "green", "yellow", "orange"];
 
- function whatIsTheType(variable){
-   return typeof variable;
- }
+function whatIsTheType(variable){
+  return typeof variable;
+}
  
- let outcome = whatIsTheType(colours);`;
+let outcome = whatIsTheType(colours);`;
 // -------------------------------------
 let colours = ["blue", "green", "yellow", "orange"];
 

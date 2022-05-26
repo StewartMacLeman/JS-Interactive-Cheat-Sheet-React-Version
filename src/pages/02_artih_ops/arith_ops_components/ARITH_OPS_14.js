@@ -1,27 +1,27 @@
 import React from "react";
 
-const TYPEOF_2 = ({showOutcome}) => {
+const ARITH_OPS_14 = ({showOutcome}) => {
 const jsCode =`
-let age = 55;
+let numOne = 3;
 
-function whatIsTheType(variable){
-  return typeof variable;
+function useIncrement(num_1) {
+  return num_1++;
 }
- 
-let outcome = whatIsTheType(age);`;
+
+let outcome = useIncrement(numOne);`;
 // -------------------------------------
-let age = 55;
+let numOne = 3;
 
-function whatIsTheType(variable) {
-  return typeof variable;
-};
+function useIncrement(num_1) {
+  return num_1++;
+}
 
-let outcome = whatIsTheType(age);
+let outcome = useIncrement(numOne);
 // -------------------------------------
 
     return (
       <div className="jsTopicCont">
-        <h3>typeof Operator: Numbers</h3>
+        <h3>Arithmetic Operators: ++ (Increment) V2</h3>
 
         <div className="codeExampleCont">
           <pre><code>{jsCode}</code></pre>
@@ -38,4 +38,4 @@ let outcome = whatIsTheType(age);
     );
 };
 
-export default TYPEOF_2;
+export default ARITH_OPS_14;

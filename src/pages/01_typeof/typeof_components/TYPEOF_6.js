@@ -1,14 +1,14 @@
 import React from "react";
 
 const TYPEOF_6 = ({showOutcome}) => {
-const jsCode =
-`let personInfo = { name: "Bobby", age: 55 };
+const jsCode =`
+let personInfo = { name: "Bobby", age: 55 };
 
- function whatIsTheType(variable){
-   return typeof variable;
- }
+function whatIsTheType(variable){
+  return typeof variable;
+}
  
- let outcome = whatIsTheType(personInfo);`;
+let outcome = whatIsTheType(personInfo);`;
 // -------------------------------------
 let personInfo = { name: "Bobby", age: 55 };
 

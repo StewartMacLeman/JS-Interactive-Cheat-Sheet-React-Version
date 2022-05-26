@@ -1,27 +1,30 @@
 import React from "react";
 
-const TYPEOF_1 = ({showOutcome}) => {
+const ARITH_OPS_4 = ({showOutcome}) => {
 const jsCode =`
-let name = "Bobby";
+let numOne = 50;
+let numTwo = 25;
 
-function whatIsTheType(variable){
-  return typeof variable;
+function subtractNumbers(num_1, num_2) {
+  return num_1 - num_2;
 }
 
-let outcome = whatIsTheType(name);`;
+let outcome = subtractNumbers(numOne, numTwo);`;
 // -------------------------------------
-let nameString = "Bobby";
+let numOne = 50;
+let numTwo = 25;
 
-function whatIsTheType(variable) {
-  return typeof variable;
-};
+function subtractNumbers(num_1, num_2) {
+  return num_1 - num_2;
+}
 
-let outcome = whatIsTheType(nameString);
+let outcome = subtractNumbers(numOne, numTwo);
+let outcomeType = typeof outcome;
 // -------------------------------------
 
     return (
       <div className="jsTopicCont">
-        <h3>typeof Operator: Strings</h3>
+        <h3>Arithmetic Operators: - (Minus) V1</h3>
 
         <div className="codeExampleCont">
           <pre><code>{jsCode}</code></pre>
@@ -32,10 +35,11 @@ let outcome = whatIsTheType(nameString);
         <div className="hide">
           <div className="codeOutcomeCont">
             <div><code>{`outcome: ${outcome}`}</code></div>
+            <div><code>{`typeof outcome: ${outcomeType}`}</code></div>
           </div>
         </div>
       </div>
     );
 };
 
-export default TYPEOF_1;
+export default ARITH_OPS_4;
