@@ -45,7 +45,7 @@ const App = () => {
           <Route path="03_comparison_ops" element={<ComparOps showOutcome={showOutcome} />} />
           <Route path="04_if_etc" element={<IfEtc showOutcome={showOutcome} />} />
           <Route path="05_for_etc" element={<ForEtc showOutcome={showOutcome} />} />
-          <Route path="06_strings" element={<Strings />} />
+          <Route path="06_strings" element={<Strings showOutcome={showOutcome} />} />
           <Route path="07_numbers" element={<Numbers />} />
           <Route path="08_dates" element={<Dates />} />
           <Route path="09_arrays" element={<Arrays />} />
