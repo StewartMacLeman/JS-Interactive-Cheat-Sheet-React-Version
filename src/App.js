@@ -47,7 +47,7 @@ const App = () => {
           <Route path="05_for_etc" element={<ForEtc showOutcome={showOutcome} />} />
           <Route path="06_strings" element={<Strings showOutcome={showOutcome} />} />
           <Route path="07_numbers" element={<Numbers showOutcome={showOutcome} />} />
-          <Route path="08_dates" element={<Dates />} />
+          <Route path="08_dates" element={<Dates showOutcome={showOutcome} />} />
           <Route path="09_arrays" element={<Arrays />} />
           <Route path="10_objects" element={<Objects />} />
           <Route path="11_functions" element={<Functions />} />
