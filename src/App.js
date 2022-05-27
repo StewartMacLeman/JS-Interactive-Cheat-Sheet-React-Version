@@ -49,7 +49,7 @@ const App = () => {
           <Route path="07_numbers" element={<Numbers showOutcome={showOutcome} />} />
           <Route path="08_dates" element={<Dates showOutcome={showOutcome} />} />
           <Route path="09_arrays" element={<Arrays showOutcome={showOutcome} />} />
-          <Route path="10_objects" element={<Objects />} />
+          <Route path="10_objects" element={<Objects showOutcome={showOutcome} />} />
           <Route path="11_functions" element={<Functions />} />
           {/* ----------------------------- */}
           <Route path="*" element={<Missing />} />
