@@ -38,7 +38,7 @@ const App = () => {
       <Routes>
         <Route path="/" element={<Layout />}>
           {/* ----------------------------- */}
-          <Route index element={<Home />} />
+          <Route index element={<Home showOutcome={showOutcome} />} />
           {/* ----------------------------- */}
           <Route path="01_typeof" element={<TypeOf showOutcome={showOutcome} />} />
           <Route path="02_arithmetic_ops" element={<ArithOps showOutcome={showOutcome} />} />
